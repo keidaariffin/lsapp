@@ -12,129 +12,39 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <title>Laravel</title>
+        
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        
 
           <!-- Styles -->
          <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .jumbotron {
-                background-color: #311c27;
-                color: #fff;
-                padding: 70px 50px;
-                font-family: Montserrat, sans-serif;
-                text-align:center;
-                margin-bottom: 0%;
-            }
-
-            .container-fluid {
-                padding: 60px 50px;
-            }
-
-            .bg-grey {
-                background-color: #f6f6f6;
-            }
-
-             h2 {
-                font-size: 24px;
-                text-transform: uppercase;
-                color: #303030;
-                font-weight: 600;
-                margin-bottom: 30px;
-            }
-
-            .title {
-                font-size: 50px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .navbar {
-                margin-top: 0%;
-            }
-
-            
+      
         </style> 
     </head>
     <body>
-         {{--   <div class="flex-center position-ref full-height">   --}}
-             @if (Route::has('login')) 
+       
+           {{--   @if (Route::has('login')) 
                 <div class="top-right links">
                     @auth
-                        {{--   <a href="{{ url('/home') }}">Home</a>   --}} 
+                       
                     @else  
                         <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
-            @endif  
+            @endif   --}}
 
-            <div class="jumbotron">
-                {{--  <div class="title m-b-md">  --}}
-                        <div class="title">
-                            Laravel
-                    
-                </div>
+         
+              
 
-                {{--  <div class="links">
-                    <a href="http://lsapp.dev/">Home</a>
-                    <a href="http://lsapp.dev/about">About</a>
-                    <a href="http://lsapp.dev/services">Services</a>
-                    <a href="http://lsapp.dev/projects">Projects</a>
-                    <a href="http://lsapp.dev/contact">Contact Us</a>
-                </div>  --}}
-
-                @guest
-                   {{--   <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                    <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>  --}}
+               {{--  @guest
+                   
                 @else
                     <span class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -153,124 +63,292 @@
                             </form>
                         </div>
                     
-                @endguest
+                @endguest --}}
             
-            </div>
-        </div> 
+          {{--   </div>
+        </div>  --}}
 
-                <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-                    <!-- Brand -->
-                    <a class="navbar-brand" href="#">Logo</a>
+        <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-                        <!-- Links -->
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link" href="http://lsapp.dev">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="http://lsapp.dev/about">About</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="http://lsapp.dev/services">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                    <a class="nav-link" href="http://lsapp.dev/projects">Projects</a>
-                                    </li>
-                                    <li class="nav-item">
-                                            <a class="nav-link" href="http://lsapp.dev/contact">Contact Us</a>
-                                            </li>
-    
-                <!-- Dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                    Dropdown link
-                    </a>
-                    <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Link 1</a>
-                    <a class="dropdown-item" href="#">Link 2</a>
-                    <a class="dropdown-item" href="#">Link 3</a>
+                <nav class="navbar navbar-default navbar-fixed-top">
+                  <div class="container">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                      </button>
+                      <a class="navbar-brand" href="#myPage">Logo</a>
                     </div>
-                </li>
-                </ul>
-            </nav>
-            <br>
-
-
-        <!-- Container (About) -->
-        <div id="about" class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2>About Us</h2>
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#programme">PROGRAMME</a></li>
+                        <li><a href="#portal">PORTAL</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                      </ul>
+                    </div>
                   </div>
-                  {{--  <div class="col-sm-4">
-                    <span class="glyphicon glyphicon-signal logo"></span>
-                  </div>  --}}
+                </nav>
+                
+                <div class="jumbotron text-center">
+                  <h1>Company</h1> 
+                  <p>We specialize in blablabla</p>
                 </div>
-              </div>
-
-         <div class="container-fluid bg-grey">
-                 <div class="row">
+                
+                <!-- Container (About Section) -->
+                <div id="about" class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2>About Company Page</h2><br>
+                      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                     
+                    </div>
                     <div class="col-sm-4">
-                    <span style="font-size:25em;" class="glyphicon glyphicon-globe logo slideanim"></span>
+                      <span class="glyphicon glyphicon-signal logo"></span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="container-fluid bg-grey">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+                    </div>
+                    <div class="col-sm-8">
+                      <h2>Our Values</h2><br>
+                      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+                      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                       <br><button class="btn btn-default btn-lg">See More</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Container (Services Section) -->
+                <div id="programme" class="container-fluid text-center">
+                  <h2>OUR PROGRAMMES</h2>
+                  <h4>What we offer</h4>
+                  <br>
+                  <div class="row slideanim">
+                    <div class="col-sm-4">
+                      <span class="glyphicon glyphicon-off logo-small"></span>
+                      <h4>POWER</h4>
+                      <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+                    <div class="col-sm-4">
+                      <span class="glyphicon glyphicon-heart logo-small"></span>
+                      <h4>LOVE</h4>
+                      <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+                    <div class="col-sm-4">
+                      <span class="glyphicon glyphicon-lock logo-small"></span>
+                      <h4>JOB DONE</h4>
+                      <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+                  </div>
+                  <br><br>
+                  <div class="row slideanim">
+                    <div class="col-sm-4">
+                      <span class="glyphicon glyphicon-leaf logo-small"></span>
+                      <h4>GREEN</h4>
+                      <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+                    <div class="col-sm-4">
+                      <span class="glyphicon glyphicon-certificate logo-small"></span>
+                      <h4>CERTIFIED</h4>
+                      <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+                    <div class="col-sm-4">
+                      <span class="glyphicon glyphicon-wrench logo-small"></span>
+                      <h4 style="color:#303030;">HARD WORK</h4>
+                      <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Container (Portfolio Section) -->
+                <div id="portfolio" class="container-fluid text-center bg-grey">
+                  <h2>Portfolio</h2><br>
+                  <h4>What we have created</h4>
+                  <div class="row text-center slideanim">
+                    <div class="col-sm-4">
+                      <div class="thumbnail">
+                        <img src="paris.jpg" alt="Paris" width="400" height="300">
+                        <p><strong>Paris</strong></p>
+                        <p>Yes, we built Paris</p>
                       </div>
-                      <div class="col-sm-8">
-                        <h2>Our Values</h2><br>
-                        <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-                        <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumbnail">
+                        <img src="newyork.jpg" alt="New York" width="400" height="300">
+                        <p><strong>New York</strong></p>
+                        <p>We built New York</p>
                       </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumbnail">
+                        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
+                        <p><strong>San Francisco</strong></p>
+                        <p>Yes, San Fran is ours</p>
+                      </div>
+                    </div>
+                  </div><br>
+                  
+                  <h2>What our customers say</h2>
+                  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+                      </div>
+                      <div class="item">
+                        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+                      </div>
+                      <div class="item">
+                        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+                      </div>
+                    </div>
+                
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
                 </div>
-            </div>
-
-        <!-- Container (Services Section) -->
-        <div id="services" class="container-fluid text-center">
-                <h2>SERVICES</h2>
-                <h4>What we offer</h4>
-                <br>
-                <div class="row slideanim">
-                <div class="col-sm-4">
-                    <span style="font-size:4em;" class="glyphicon glyphicon-off logo-large"></span>
-                    <h4>POWER</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
+                
+                <!-- Container (Pricing Section) -->
+                <div id="pricing" class="container-fluid">
+                  <div class="text-center">
+                    <h2>Pricing</h2>
+                    <h4>Choose a payment plan that works for you</h4>
+                  </div>
+                  <div class="row slideanim">
+                    <div class="col-sm-4 col-xs-12">
+                      <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                          <h1>Basic</h1>
+                        </div>
+                        <div class="panel-body">
+                          <p><strong>20</strong> Lorem</p>
+                          <p><strong>15</strong> Ipsum</p>
+                          <p><strong>5</strong> Dolor</p>
+                          <p><strong>2</strong> Sit</p>
+                          <p><strong>Endless</strong> Amet</p>
+                        </div>
+                        <div class="panel-footer">
+                          <h3>$19</h3>
+                          <h4>per month</h4>
+                          <button class="btn btn-lg">Sign Up</button>
+                        </div>
+                      </div>      
+                    </div>     
+                    <div class="col-sm-4 col-xs-12">
+                      <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                          <h1>Pro</h1>
+                        </div>
+                        <div class="panel-body">
+                          <p><strong>50</strong> Lorem</p>
+                          <p><strong>25</strong> Ipsum</p>
+                          <p><strong>10</strong> Dolor</p>
+                          <p><strong>5</strong> Sit</p>
+                          <p><strong>Endless</strong> Amet</p>
+                        </div>
+                        <div class="panel-footer">
+                          <h3>$29</h3>
+                          <h4>per month</h4>
+                          <button class="btn btn-lg">Sign Up</button>
+                        </div>
+                      </div>      
+                    </div>       
+                    <div class="col-sm-4 col-xs-12">
+                      <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                          <h1>Premium</h1>
+                        </div>
+                        <div class="panel-body">
+                          <p><strong>100</strong> Lorem</p>
+                          <p><strong>50</strong> Ipsum</p>
+                          <p><strong>25</strong> Dolor</p>
+                          <p><strong>10</strong> Sit</p>
+                          <p><strong>Endless</strong> Amet</p>
+                        </div>
+                        <div class="panel-footer">
+                          <h3>$49</h3>
+                          <h4>per month</h4>
+                          <button class="btn btn-lg">Sign Up</button>
+                        </div>
+                      </div>      
+                    </div>    
+                  </div>
                 </div>
-                <div class="col-sm-4">
-                    <span style="font-size:4em;" class="glyphicon glyphicon-heart logo-small"></span>
-                    <h4>LOVE</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
+                
+                <!-- Container (Contact Section) -->
+                <div id="contact" class="container-fluid bg-grey">
+                  <h2 class="text-center">CONTACT</h2>
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <p>Contact us and we'll get back to you within 24 hours.</p>
+                      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+                      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+                      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+                    </div>
+                    <div class="col-sm-7 slideanim">
+                      <div class="row">
+                        <div class="col-sm-6 form-group">
+                          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
+                      </div>
+                      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                      <div class="row">
+                        <div class="col-sm-12 form-group">
+                          <button class="btn btn-default pull-right" type="submit">Send</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-sm-4">
-                    <span style="font-size:4em;" class="glyphicon glyphicon-lock logo-small"></span>
-                    <h4>JOB DONE</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
-                </div>
-                </div>
-                <br><br>
-                <div class="row slideanim">
-                <div class="col-sm-4">
-                    <span style="font-size:4em;" class="glyphicon glyphicon-leaf logo-small"></span>
-                    <h4>GREEN</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
-                </div>
-                <div class="col-sm-4">
-                    <span style="font-size:4em;" class="glyphicon glyphicon-certificate logo-small"></span>
-                    <h4>CERTIFIED</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
-                </div>
-                <div class="col-sm-4">
-                    <span style="font-size:4em;" class="glyphicon glyphicon-wrench logo-small"></span>
-                    <h4 style="color:#303030;">HARD WORK</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
-                </div>
-                </div>
-            </div>
-
-            <div class="jumbotron text-center" style="margin-bottom:0">
-                <p>Footer</p>
-              </div>
-
+                
+                <!-- Add Google Maps -->
+                <div id="googleMap" style="height:400px;width:100%;"></div>
+                <script>
+                function myMap() {
+                var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+                var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                var marker = new google.maps.Marker({position:myCenter});
+                marker.setMap(map);
+                }
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+                <!--
+                To use this code on your website, get a free API key from Google.
+                Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+                -->
+                
+                <footer class="container-fluid text-center">
+                  <a href="#myPage" title="To Top">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                  </a>
+                  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+                </footer>
              
     </body>
 </html>
