@@ -12,6 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -26,7 +27,7 @@
     
                
                         <!-- Authentication Links -->
-                    {{--     @guest
+                        @guest
                            
                         @else
                             <li class="nav-item dropdown">
@@ -46,7 +47,7 @@
                                     </form>
                                 </div>
                             </li>
-                        @endguest --}}
+                        @endguest
                     
     <!-- Scripts -->
     <script src="{{ asset('js/mystyle.js') }}"></script>
