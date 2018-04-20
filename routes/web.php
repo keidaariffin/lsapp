@@ -20,14 +20,14 @@ Route::get('about', function()
         return View::make('layouts.about');
     });
 
-Route::get('services', function()
+Route::get('programme', function()
     {
-    return View::make('layouts.services');
+    return View::make('layouts.programme');
     }); 
 
-Route::get('projects', function()
+Route::get('portal', function()
     {
-        return View::make('layouts.projects');
+        return View::make('layouts.portal');
     });
 
 Route::get('contact', function()
@@ -39,4 +39,4 @@ Route::get('contact', function()
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/welcome', 'HomeController@index')->name('welcome');
