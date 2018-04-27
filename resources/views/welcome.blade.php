@@ -9,7 +9,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>                        
+                  <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#myPage">Logo</a>
               </div>
@@ -25,10 +25,10 @@
           </nav>
           
           <div class="jumbotron text-center">
-            <h1>Company</h1> 
-            <p>We specialize in blablabla</p>
+            <h1>Company</h1>
+            <p>We specialize in blablabla and bla</p>
           </div>
-          
+
           <!-- Container (About Section) -->
           <div id="about" class="container-fluid">
             <div class="row">
@@ -36,14 +36,14 @@
                 <h2>About Company Page</h2><br>
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-               
+
               </div>
               <div class="col-sm-4">
                 <span class="glyphicon glyphicon-signal logo"></span>
               </div>
             </div>
           </div>
-          
+
           <div class="container-fluid bg-grey">
             <div class="row">
               <div class="col-sm-4">
@@ -58,7 +58,7 @@
               </div>
             </div>
           </div>
-          
+
           <!-- Container (Services Section) -->
           <div id="programme" class="container-fluid text-center">
             <h2>OUR PROGRAMMES</h2>
@@ -100,7 +100,7 @@
               </div>
             </div>
           </div>
-          
+
           <!-- Container (Portfolio Section) -->
           <div id="portfolio" class="container-fluid text-center bg-grey">
             <h2>Portfolio</h2><br>
@@ -128,7 +128,7 @@
                 </div>
               </div>
             </div><br>
-            
+
             <h2>What our customers say</h2>
             <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
               <!-- Indicators -->
@@ -137,7 +137,7 @@
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
               </ol>
-          
+
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
                 <div class="item active">
@@ -150,7 +150,7 @@
                   <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
                 </div>
               </div>
-          
+
               <!-- Left and right controls -->
               <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -162,7 +162,7 @@
               </a>
             </div>
           </div>
-          
+
           <!-- Container (Pricing Section) -->
           <div id="pricing" class="container-fluid">
             <div class="text-center">
@@ -187,8 +187,8 @@
                     <h4>per month</h4>
                     <button class="btn btn-lg">Sign Up</button>
                   </div>
-                </div>      
-              </div>     
+                </div>
+              </div>
               <div class="col-sm-4 col-xs-12">
                 <div class="panel panel-default text-center">
                   <div class="panel-heading">
@@ -206,8 +206,8 @@
                     <h4>per month</h4>
                     <button class="btn btn-lg">Sign Up</button>
                   </div>
-                </div>      
-              </div>       
+                </div>
+              </div>
               <div class="col-sm-4 col-xs-12">
                 <div class="panel panel-default text-center">
                   <div class="panel-heading">
@@ -225,11 +225,11 @@
                     <h4>per month</h4>
                     <button class="btn btn-lg">Sign Up</button>
                   </div>
-                </div>      
-              </div>    
+                </div>
+              </div>
             </div>
           </div>
-          
+
           <!-- Container (Contact Section) -->
           <div id="contact" class="container-fluid bg-grey">
             <h2 class="text-center">CONTACT</h2>
@@ -258,22 +258,22 @@
               </div>
             </div>
           </div>
-          
-                
+
+
                 <!-- Add Google Maps -->
                 <div id="googleMap" style="height:400px;width:100%;"></div>
-                
+
                 <!--
                 To use this code on your website, get a free API key from Google.
                 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
                 -->
-                
+
                 <footer class="container-fluid text-center">
                   <a href="#myPage" title="To Top">
                     <span class="glyphicon glyphicon-chevron-up"></span>
                   </a>
                   <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
                 </footer>
-             
+
     </body>
 </html>
